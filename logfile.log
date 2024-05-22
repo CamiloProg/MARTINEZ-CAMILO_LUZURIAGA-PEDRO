@@ -1,0 +1,79 @@
+[2024-05-21 20:20:07] [ ERROR] [OdontologoServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-224]
+[2024-05-21 20:20:59] [ ERROR] [OdontologoServiceTest:29] Wrong user name or password [28000-224]
+[2024-05-21 20:21:23] [ ERROR] [OdontologoServiceTest:29] Wrong user name or password [28000-224]
+[2024-05-21 20:21:37] [ ERROR] [OdontologoServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-224]
+[2024-05-21 20:22:48] [ ERROR] [OdontologoServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-224]
+[2024-05-21 20:23:39] [ ERROR] [OdontologoServiceTest:29] IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-224]
+[2024-05-21 20:26:07] [ ERROR] [OdontologoServiceTest:29] Syntax error in SQL statement "\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000anumeroMatricula INT NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aAPELLIDO VARCHAR(50) NOT NULL)\000d\000a[*]INSERT INTO ODONTOLOGOS\000d\000aVALUES (DEFAULT, 567, 'IBUPROFENO','PFIZER'),\000d\000a(DEFAULT, 859, 'PARACETAMOL','PFIZER')"; SQL statement:
+
+CREATE TABLE ODONTOLOGOS(
+ID INT AUTO_INCREMENT PRIMARY KEY,
+numeroMatricula INT NOT NULL,
+NOMBRE VARCHAR(50) NOT NULL,
+APELLIDO VARCHAR(50) NOT NULL)
+INSERT INTO ODONTOLOGOS
+VALUES (DEFAULT, 567, 'IBUPROFENO','PFIZER'),
+(DEFAULT, 859, 'PARACETAMOL','PFIZER') [42000-224]
+[2024-05-21 20:27:24] [ ERROR] [OdontologoServiceTest:29] Column "567" not found; SQL statement:
+
+
+INSERT INTO ODONTOLOGOS
+VALUES (DEFAULT, "567", 'CAMILO','PFIZER'),
+(DEFAULT, "859", 'LUIS','PFIZER') [42122-224]
+[2024-05-21 20:28:05] [ ERROR] [OdontologoServiceTest:29] Column count does not match; SQL statement:
+
+
+INSERT INTO ODONTOLOGOS
+VALUES (DEFAULT, 567,"4" , 'CAMILO','PFIZER'),
+(DEFAULT, 859, "4", 'LUIS','PFIZER') [21002-224]
+[2024-05-21 20:38:04] [ INFO ] [OdontologoDAOH2:62] Odontologos: []
+[2024-05-21 20:38:04] [ INFO ] [OdontologoDAOH2:62] Odontologos: [Odontologo{id=1, numeroMatricula='567', nombre='null', apellido='null'}]
+[2024-05-21 20:38:21] [ INFO ] [OdontologoDAOH2:62] Odontologos: []
+[2024-05-21 20:38:21] [ INFO ] [OdontologoDAOH2:62] Odontologos: [Odontologo{id=1, numeroMatricula='567', nombre='null', apellido='null'}]
+[2024-05-21 20:38:43] [ ERROR] [OdontologoServiceTest:29] Column "LUIS" not found; SQL statement:
+
+
+INSERT INTO ODONTOLOGOS
+VALUES (DEFAULT, 567, 'CAMILO','PFIZER'),
+(DEFAULT, 859, "LUIS",'PFIZER') [42122-224]
+[2024-05-21 20:39:08] [ INFO ] [OdontologoDAOH2:62] Odontologos: []
+[2024-05-21 20:39:08] [ INFO ] [OdontologoDAOH2:62] Odontologos: [Odontologo{id=1, numeroMatricula='567', nombre='null', apellido='null'}]
+[2024-05-21 20:39:49] [ INFO ] [OdontologoDAOH2:62] Odontologos: []
+[2024-05-21 20:39:49] [ INFO ] [OdontologoDAOH2:62] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='null', apellido='null'}]
+[2024-05-21 20:40:38] [ INFO ] [OdontologoDAOH2:62] Odontologos: []
+[2024-05-21 20:40:38] [ INFO ] [OdontologoDAOH2:62] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='null', apellido='null'}]
+[2024-05-21 20:45:27] [ INFO ] [OdontologoDAOH2:48] NULL not allowed for column "NOMBRE"; SQL statement:
+INSERT INTO odontologos VALUES (DEFAULT, ?, ?, ?) [23502-224]
+[2024-05-21 20:45:34] [ INFO ] [OdontologoDAOH2:77] Odontologos: []
+[2024-05-21 20:45:34] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='null', apellido='null'}]
+[2024-05-21 20:45:48] [ INFO ] [OdontologoDAOH2:48] NULL not allowed for column "NOMBRE"; SQL statement:
+INSERT INTO odontologos VALUES (DEFAULT, ?, ?, ?) [23502-224]
+[2024-05-21 20:48:49] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=3, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
+[2024-05-21 20:48:54] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=3, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
+[2024-05-21 20:49:05] [ INFO ] [OdontologoDAOH2:77] Odontologos: []
+[2024-05-21 20:49:05] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}]
+[2024-05-21 20:49:42] [ INFO ] [OdontologoDAOH2:77] Odontologos: []
+[2024-05-21 20:49:42] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}]
+[2024-05-21 20:50:34] [ INFO ] [OdontologoDAOH2:77] Odontologos: []
+[2024-05-21 20:50:34] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}]
+[2024-05-21 20:50:34] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}]
+[2024-05-21 20:50:43] [ INFO ] [OdontologoDAOH2:77] Odontologos: []
+[2024-05-21 20:50:43] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}]
+[2024-05-21 20:50:43] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}]
+[2024-05-21 20:50:59] [ INFO ] [OdontologoDAOH2:77] Odontologos: []
+[2024-05-21 20:50:59] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}]
+[2024-05-21 20:50:59] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}]
+[2024-05-21 20:51:22] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=4, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
+[2024-05-21 20:55:48] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=4, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
+[2024-05-21 20:55:54] [ INFO ] [OdontologoDAOH2:77] Odontologos: []
+[2024-05-21 20:55:54] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}]
+[2024-05-21 20:55:54] [ INFO ] [OdontologoDAOH2:77] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}]
+[2024-05-21 20:58:36] [ INFO ] [OdontologoDAOH2:84] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}, Odontologo{id=3, numeroMatricula='11', nombre='aragon', apellido='PFIZER'}]
+[2024-05-21 20:59:00] [ INFO ] [OdontologoDAOH2:83] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}, Odontologo{id=3, numeroMatricula='11', nombre='aragon', apellido='PFIZER'}]
+[2024-05-21 20:59:05] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=4, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
+[2024-05-21 20:59:50] [ INFO ] [OdontologoDAOH2:83] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}, Odontologo{id=3, numeroMatricula='11', nombre='aragon', apellido='PFIZER'}]
+[2024-05-21 20:59:50] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=4, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
