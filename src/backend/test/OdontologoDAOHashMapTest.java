@@ -1,6 +1,7 @@
-package backend.dao.impl;
+package backend.test;
 
 import backend.dao.impl.OdontologoDAO;
+import backend.dao.impl.OdontologoDAOHashMap;
 import backend.model.Odontologo;
 import org.junit.Before;
 import org.junit.Test;

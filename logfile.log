@@ -100,3 +100,14 @@ INSERT INTO odontologos VALUES (DEFAULT, ?, ?, ?) [23502-224]
 [2024-05-21 21:17:13] [ INFO ] [OdontologoDAOHashMap:28] Listado de todos los odontólogos: [Odontologo{id=1, numeroMatricula='1234', nombre='Perez', apellido='juan'}, Odontologo{id=2, numeroMatricula='5678', nombre='Gomez', apellido='maria'}]
 [2024-05-21 21:17:40] [ INFO ] [OdontologoDAOH2:83] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}, Odontologo{id=3, numeroMatricula='11', nombre='aragon', apellido='PFIZER'}]
 [2024-05-21 21:17:40] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=4, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
+[2024-05-21 21:19:31] [ INFO ] [OdontologoDAOHashMap:22] Odontólogo guardado: Odontologo{id=1, numeroMatricula='1234', nombre='camilo', apellido='Juan'}
+[2024-05-21 21:19:31] [ INFO ] [OdontologoDAOHashMap:22] Odontólogo guardado: Odontologo{id=2, numeroMatricula='5678', nombre='Gomez', apellido='gustavo'}
+[2024-05-21 21:19:31] [ INFO ] [OdontologoDAOHashMap:28] Listado de todos los odontólogos: [Odontologo{id=1, numeroMatricula='1234', nombre='camilo', apellido='Juan'}, Odontologo{id=2, numeroMatricula='5678', nombre='Gomez', apellido='gustavo'}]
+[2024-05-21 21:19:31] [ INFO ] [OdontologoDAOHashMap:22] Odontólogo guardado: Odontologo{id=1, numeroMatricula='1234', nombre='Perez', apellido='juan'}
+[2024-05-21 21:19:31] [ INFO ] [OdontologoDAOHashMap:22] Odontólogo guardado: Odontologo{id=2, numeroMatricula='5678', nombre='Gomez', apellido='maria'}
+[2024-05-21 21:19:31] [ INFO ] [OdontologoDAOHashMap:28] Listado de todos los odontólogos: [Odontologo{id=1, numeroMatricula='1234', nombre='Perez', apellido='juan'}, Odontologo{id=2, numeroMatricula='5678', nombre='Gomez', apellido='maria'}]
+[2024-05-21 21:22:54] [ INFO ] [OdontologoDAOHashMap:22] Odontólogo guardado: Odontologo{id=1, numeroMatricula='1234', nombre='Perez', apellido='juan'}
+[2024-05-21 21:22:54] [ INFO ] [OdontologoDAOHashMap:22] Odontólogo guardado: Odontologo{id=2, numeroMatricula='5678', nombre='Gomez', apellido='maria'}
+[2024-05-21 21:22:54] [ INFO ] [OdontologoDAOHashMap:28] Listado de todos los odontólogos: [Odontologo{id=1, numeroMatricula='1234', nombre='Perez', apellido='juan'}, Odontologo{id=2, numeroMatricula='5678', nombre='Gomez', apellido='maria'}]
+[2024-05-21 21:23:00] [ INFO ] [OdontologoDAOH2:83] Odontologos: [Odontologo{id=1, numeroMatricula='123', nombre='CAMILO', apellido='PFIZER'}, Odontologo{id=2, numeroMatricula='859', nombre='LUIS', apellido='PFIZER'}, Odontologo{id=3, numeroMatricula='11', nombre='aragon', apellido='PFIZER'}]
+[2024-05-21 21:23:00] [ INFO ] [OdontologoDAOH2:35] Odontologo persisitido Odontologo{id=4, numeroMatricula='12', nombre='Pepe', apellido='Gonzalez'}
