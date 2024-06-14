@@ -87,14 +87,16 @@
       </div>
     </nav>
     <div class="container-xl">
-      <h1 class="mt-5">Odontologos</h1>
+      <h1 class="mt-5">Pacientes</h1>
       <table class="table table-striped-columns" id="odontologosTable">
         <thead>
           <tr>
             <th>Orden</th>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>Matricula</th>
+            <th>DNI</th>
+            <!-- <th>Fecha Ingreso</th>
+            <th>Domicilio</th> -->
           </tr>
         </thead>
         <tbody></tbody>
@@ -111,7 +113,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="editarModalLabel">Editar Odontólogo</h5>
+            <h5 class="modal-title" id="editarModalLabel">Editar Paciente</h5>
             <button
               type="button"
               class="btn-close"
@@ -141,9 +143,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="editarMatricula" class="form-label"
-                  >Matrícula</label
-                >
+                <label for="editarMatricula" class="form-label">DNI</label>
                 <input
                   type="text"
                   class="form-control"
@@ -151,6 +151,28 @@
                   required
                 />
               </div>
+              <!-- <div class="mb-3">
+                <label for="editarFechaIngreso" class="form-label"
+                  >Fecha Ingreso</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editarFechaIngreso"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="editarDomicilio" class="form-label"
+                  >Domicilio</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editarDomicilio"
+                  required
+                />
+              </div> -->
               <button type="submit" class="btn btn-primary">
                 Guardar cambios
               </button>
@@ -159,6 +181,6 @@
         </div>
       </div>
     </div>
-    <script src="js/listar_odontologos.js"></script>
+    <script src="js/listar_pacientes.js"></script>
   </body>
 </html>

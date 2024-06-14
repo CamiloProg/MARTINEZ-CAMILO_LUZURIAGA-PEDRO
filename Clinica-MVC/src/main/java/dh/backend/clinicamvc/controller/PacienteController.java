@@ -44,10 +44,16 @@ public class PacienteController {
         }
     }
 
-    @PutMapping
-    public ResponseEntity<String>  actualizarPaciente(@RequestBody Paciente paciente){
-        pacienteService.actualizarPaciente(paciente);
-        return  ResponseEntity.ok("{\"message\": \"paciente actualizado\"}");
+    @PutMapping("/{id}")
+    public ResponseEntity<String> actualizarPaciente(@PathVariable Integer id, @RequestBody Paciente paciente) {
+        Optional<Paciente> pacienteOptional = pacienteService.buscarPorId(id);
+        if (pacienteOptional.isPresent()) {
+            paciente.setId(id); // Asegúrate de que el ID sea correcto
+            pacienteService.actualizarPaciente(paciente);
+            return ResponseEntity.ok("{\"message\": \"paciente actualizado\"}");
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
     }
 
     @DeleteMapping("/{id}")
